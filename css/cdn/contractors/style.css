@@ -1,0 +1,616 @@
+ /* Contractor container */
+ .cc-contractor-content{
+    padding-top: 58px;
+    position: relative;
+  }
+  
+  /*Onboarding styles*/
+  .cc-onboarding{
+    margin: 0;
+    height: 100vh;
+    background-image: url('/./images/bg-onboarding.svg');
+    padding-top: 100px;
+  }
+  
+  .cc-onboarding .cc-card-info{
+    position: relative;
+    color: var(--primary-dark-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #F0F9FF;
+    overflow: hidden;
+  }
+  .cc-onboarding .cc-card-info .cc-icon{
+    position: absolute;
+    top: -0.95rem;
+    left: -1.5rem;
+    z-index: 0;
+  }
+  .cc-onboarding .cc-card-info .cc-icon svg{
+    width: 150px;
+    height: 150px;
+    color: #dff2ff;
+  }
+  .cc-onboarding .cc-card-info .cc-info{
+    position: relative;
+  }
+  
+  .cc-ob-logo {
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+  }
+  
+  .ob-stepper-list {
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: counter;
+  }
+  
+  .ob-stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .ob-stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .ob-stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .ob-stepper-item .ob-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--gray-light-2-color);
+    margin-bottom: 6px;
+    color: var(--gray-color);
+  }
+  
+  .ob-stepper-item .ob-name {
+    color: var(--gray-color);
+  }
+  
+  .ob-stepper-item.cc-active {
+    font-weight: bold;
+  }
+  
+  .ob-stepper-item.completed .ob-counter {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: white;
+  }
+  
+  .ob-stepper-item.completed .ob-name {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .ob-stepper-item.cc-active .ob-counter {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    font-weight: bold;
+  }
+  
+  .ob-stepper-item.cc-active .ob-name {
+    color: var(--primary-color);
+  }
+  .ob-stepper-item .ob-counter::before {
+    counter-increment: counter;
+    content: ""counter(counter);
+  }
+  
+  .cc-icon-info svg {
+    color: var(--primary-color);
+  }
+  
+  .ob-stepper-item.completed .ob-counter::before {
+    content: '\2713';
+  }
+  
+  .ob-stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid var(--primary-color);
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .ob-stepper-item:first-child::before {
+    content: none;
+  }
+  
+  .ob-stepper-item:last-child::after {
+    content: none;
+  }
+  
+  .ob-send-invitations .cc-card{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .ob-send-invitations .cc-send-btn{
+    border-color: var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+  }
+  .ob-send-invitations .cc-title{
+    display: none;
+  }
+  .ob-send-invitations hr{
+    display: none;
+  }
+  .ob-send-invitations table thead th{
+    background-color: #f9f9f9;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    font-size: 10px !important;
+  }
+  
+  .ob-send-invitations table.nkn-table thead tr{
+    border: none;
+  }
+  .ob-send-invitations table thead th:last-child,
+  .ob-send-invitations table tbody tr td:last-child,
+  .ob-send-invitations table thead th:nth-last-child(2),
+  .ob-send-invitations table tbody tr td:nth-last-child(2){
+    display: none !important;
+  }
+  .ob-send-invitations table tbody tr{
+    border-color: transparent;
+  }
+  .ob-send-invitations table tbody tr td{
+    padding: .75rem;
+  }
+  
+  .cc-complete-step {
+    padding: 3rem 1.5rem;
+    position: relative;
+    text-align: center;
+  }
+  .cc-complete-step .cc-icon {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  .cc-complete-step .cc-icon svg {
+    width: 300px;
+    height: 300px;
+    color: #EAF1F7;
+  }
+  .cc-complete-step .cc-info {
+    position: relative;
+  }
+  .cc-complete-step .cc-info h1 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 2rem;
+    letter-spacing: .1rem;
+  }
+  .cc-complete-step .cc-info p {
+    font-size: 130%;
+    font-weight: 500;
+    color: var(--gray-dark-1-color);
+    padding: 3rem 1.5rem;
+    line-height: 2.1rem;
+  }
+  
+  /*Account*/
+  /*Account information at the top of the navigation vetical*/
+  .cc-nav.cc-vertical.cc-nav-account .cc-dropdown-icon{
+    display: none;
+  }
+  .cc-nav-account .cc-nav-toggle.cc-account-info{
+    position: relative;
+    display: flex;
+    cursor: auto;
+    flex-wrap: nowrap;
+  }
+  .cc-account-info .cc-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  .cc-account-info .cc-info {
+    line-height: 18px;
+    padding-left: .5rem;
+    color: var(--gray-dark-1-color);
+    text-transform: uppercase;
+  }
+  .cc-account-info .cc-info .cc-account-name {
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+  
+  }
+  .cc-account-info .cc-info .cc-account-nr {
+    font-size: 13px;
+  }
+  
+  /*Workscope menu*/
+  .cc-nav.cc-horizontal.cc-nav-workscope{
+  
+  }
+  
+  /*Project Page*/
+  
+    /*Map section*/
+      /* Geocoder input */
+      /* Some styles of the geocoder input are overwritten, so that it has the same appearance as the unkuna inputs */
+      .mapboxgl-ctrl-geocoder {
+          width: 100%;
+          box-shadow: none;
+      }
+  
+      .mapboxgl-ctrl-geocoder--input {
+        font-family: "Montserrat", sans-serif;
+        width: 100% !important;
+        background-color: transparent;
+        border: solid 1px var(--nkn-border-color);
+        border-radius: .4rem;
+        height: var(--nkn-form-element-height);
+        color: #000;
+        font-size: 12px;
+      }
+  
+      /* Location */
+      .cc-location {
+        position: relative;
+        height: 400px;
+        width: 100%;
+      }
+  
+      /*map*/
+      #map {
+        height: 115%;
+        width: 100%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+  
+      .mapboxgl-map {
+        font-family: "Montserrat", sans-serif;
+      }
+  
+      .cc-project .mapboxgl-map {
+        border-radius: 10px;
+      }
+  
+      /* floating form */
+      .cc-form.cc-float .mapboxgl-ctrl-geocoder {
+        max-width: 100%;
+      }
+    
+    /*Customer section*/
+      .cc-customer .nkn-select {
+        width: calc(100% - 3rem);
+      }
+      
+      .cc-customer .cc-btn.cc-icon {
+        border-radius: 18%;
+        margin-left: 8px;
+        padding: 1px 10px;
+        width: 39px;
+        height: 39px;
+      }
+  
+  /* Cards for results */
+  .cc-card.cc-card-ahri {
+    border: 1px solid var(--gray-light-2-color);
+    box-shadow: none;
+    background-color: white;
+    margin-bottom: .5rem;
+  }
+  
+  .cc-card.cc-card-ahri>img {
+    position: absolute;
+    top: 0px;
+    right: 6px;
+    width: 80px;
+    opacity: .6;
+    z-index: 0;
+  }
+  
+  .cc-card.cc-card-ahri .cc-title {
+    color: var(--gray-color);
+    text-transform: uppercase;
+  }
+  
+  .cc-card.cc-card-ahri.cc-primary {
+    border-color: var(--primary-light-1-color);
+  }
+  
+  .cc-card.cc-card-ahri.cc-primary .cc-title {
+    color: var(--primary-color);
+    margin: 1rem 0;
+  }
+  
+  .cc-card-ahri .cc-card-title {
+    text-transform: uppercase;
+    color: var(--gray-dark-1-color);
+    font-size: 120%;
+    border-bottom: 1px solid var(--gray-light-2-color);
+    padding-bottom: 1rem;
+    min-height: 85px;
+  }
+  
+  .cc-card-ahri .cc-card-title .cc-title-info {
+    max-width: 80%;
+  }
+  
+  .cc-card-ahri .cc-card-title h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 28px;
+  }
+  
+  .cc-card-ahri .cc-ahri-price {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 20%;
+    display: flex;
+    padding: .75rem;
+    background-color: #fff1dd;
+    border-radius: .4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cc-card-ahri .cc-ahri-price .cc-information {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 10px;
+    color: #FF8F00;
+    font-weight: bold;
+  }
+  
+  .cc-card-ahri .cc-ahri-price .cc-price {
+    display: block;
+    font-size: 22px;
+    color: #0A68A4;
+    font-weight: bold;
+    margin: .75rem;
+  }
+  
+  .cc-card-ahri .cc-card-subtitle {
+    border-bottom: 1px solid var(--gray-light-2-color);
+    padding-bottom: .5rem;
+  }
+  
+  .cc-card-ahri .cc-numbers,
+  .cc-card-ahri .cc-card-body {
+    flex-wrap: wrap;
+  }
+  
+  .cc-card-ahri .cc-numbers>div {
+    flex: 1;
+    max-width: 48%;
+    min-width: 32%;
+    margin: 10px 4px;
+  }
+  
+  .cc-numbers .cc-info-icon {
+    display: none;
+  }
+  
+  .cc-ratings .cc-data-rating {
+    padding: .25rem;
+    border-radius: .25rem;
+  }
+  
+  .cc-electrical .cc-info-rating,
+  .cc-furnace .cc-info-rating {
+    line-height: 18px;
+  }
+  
+  .cc-ratings .cc-electrical .cc-data-rating {
+    background-color: #f3f8fd;
+  }
+  
+  .cc-ratings .cc-furnace .cc-data-rating {
+    background-color: #fff1ec;
+  }
+  
+  .cc-ratings .cc-available-rebates .cc-data-rating {
+    background-color: #eee;
+  }
+  
+  .cc-ratings .cc-label-rating {
+    font-size: 10px;
+    color: var(--gray-dark-1-color);
+    line-height: 12px;
+  }
+  
+  .cc-ratings .cc-text-rating {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--gray-dark-2-color);
+  }
+  
+  .cc-ratings .cc-icon-rating {
+    display: none;
+  }
+  
+  .cc-reset-select:hover {
+    cursor: pointer;
+    color: #ca6541;
+  }
+  
+  .cc-reset-select span {
+    color: #cd907a;
+    font-weight: 500;
+  }
+  
+  .cc-reset-select svg.nkn-icon {
+    width: 9px;
+    height: 9px;
+    margin-left: 0.25rem;
+    color: #cd907a;
+  }
+  
+  /* Rebates in AHRI Matchups */
+  .cc-rebates-list .cc-item {
+    width: 100%;
+    padding: 0 0 .5rem 0;
+    margin: .25rem 0;
+    border-radius: .4rem;
+    background-color: white;
+    border: 1px solid #dfdfdf;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon {
+    margin-left: .25rem;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon>div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon svg {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .cc-rebates-list .cc-item .cc-header {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon span {
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: .5rem;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon.available span {
+    color: #129700;
+  }
+  
+  .cc-rebates-list .cc-item .cc-icon.no-available span {
+    color: #F44336;
+  }
+  
+  .cc-rebates-list .cc-item .cc-amount {
+    text-align: center;
+    background-color: #bbf0b4;
+    padding: 0 1rem;
+    border-radius: 0 .25rem 0 1.5rem;
+    color: #129700;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-right: -1px;
+    border-bottom: none;
+    border-left: none;
+  }
+  
+  .cc-rebates-list .cc-item .cc-body {
+    padding: .25rem 1rem;
+  }
+  
+  .cc-rebates-list .cc-item span.cc-title {
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-dark-1-color);
+  }
+  
+  .cc-hvac-options .cc-card:hover {
+    cursor: pointer;
+    box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*Filter section*/
+  .cc-filter-close {
+    display: none;
+    color: var(--gray-color);
+  }
+  
+  .cc-filter-close:hover {
+    cursor: pointer;
+    color: black;
+  }
+  
+  
+  
+  
+  
+  
+  
+    /*Invitations*/
+    .cc-message {
+      background-image: url("../../images/email_bg.jpg");
+      background-repeat: repeat-x;
+      background-position-y: top;
+      background-size: contain;
+      margin-top: -1rem;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    
+    .cc-message .cc-card {
+      margin-top: 2rem;
+      background-color: rgba(255, 255, 255, .8);
+    }
+    
+    .cc-message .cc-card .nkn-icon {
+      height: 150px;
+      width: 150px;
+    }
+  
+    /* Radio buttons with border for invitations options */
+    .cc-radio.cc-outline span {
+      border: 1px solid var(--gray-light-2-color);
+      text-align: center;
+      border-radius: .4rem;
+      padding: .25rem 0;
+      margin-bottom: 1rem;
+    }
+    
+    .cc-radio.cc-outline input {
+      display: none;
+    }
+    
+    .cc-radio.cc-outline.cc-accept input[type="radio"]:checked+span {
+      border-color: #1e8b00;
+      background-color: #eefbe6;
+      color: #176602;
+    }
+    
+    .cc-radio.cc-outline.cc-decline input[type="radio"]:checked+span {
+      border-color: #dd1601;
+      background-color: #fff5f4;
+      color: #dd1601;
+    }

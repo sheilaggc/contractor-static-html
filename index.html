@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolCalc Home</title>
+    
+    <!-- CDN CSS       -->
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/css/unkuna.css">
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/theme/unkuna-theme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+     <!-- cdn repo styles -->     
+    <link rel="stylesheet" href="css/cdn/shared/style.css">
+    <link rel="stylesheet" href="css/cdn/shared/responsive.css">
+    <link rel="stylesheet" href="css/cdn/contractors/style.css">
+    <link rel="stylesheet" href="css/cdn/contractors/responsive.css">
+    <!-- Contractors repo styles -->     
+    <link rel="stylesheet" href="css/contractors/style.css">
+
+    <!-- SOLO PARA QUE HTML SE PAREZCA A LA APLICACION -->
+     <link rel="stylesheet" href="css/html-styles.css">
+</head>
+<body>
+    <!-- CoolCalc branded header and user menu. -->
+    <header class="cc-main-header">
+        <div class="nkn-container cc-center between">
+    
+            <!-- CoolCalc logo. -->
+            <div class="nkn-col-s2 nkn-col-m4 nkn-col-l6 cc-center start logo-section">
+                <a href="/home.html"><img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="100px"></a>
+            </div>
+    
+            <!-- User menu. -->
+            <nav class="cc-nav cc-horizontal">
+                <div class="cc-nav-toggle">☰</div>
+                <ul class="cc-nav-menu">
+                    <li class="cc-item"><a href="index.html">Home</a></li>
+    
+                    <!-- The following links will display only when the user is not logged in. -->
+                    <li class="cc-item"><a href="htmls/onboarding/create-user.html">New User</a></li>
+                    <li class="cc-item"><a href="">Log in</a></li>
+                    <!-- End of not-logged in links. -->
+                    
+                    <!-- The following links will display only when the user is logged in. -->
+                    <!--<li class="cc-item">My projects</li>
+                    <li class="cc-item">My accounts</li>
+                    <li class="cc-item cc-item-dropdown cc-center">
+                        <div class="cc-dropdown-title cc-center">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="images/icons.svg#user-color-icon"></use>
+                            </svg>
+                            <span>USER NAME</span>
+                        </div>                    
+                        <ul class="cc-dropdown-content">
+                            <li class="cc-item">My profile</li>
+                            <li class="cc-item">Log out</li>
+                        </ul>
+                    </li>-->
+                    <!-- End of logged in links. -->
+    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- The main workspace for the CoolCalc application. -->
+    <div class="cc-onboarding cc-bg-img">
+        <div class="nkn-container">
+            <div class="nkn-row nkn-py-large cc-center">
+                <div class="nkn-col-md-10">
+                    <div class="cc-card cc-welcome">
+                        <h3>WELCOME TO</h3>
+                        <img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="150px">
+                        <p>
+                            Your ultimate ally in project development. <br>
+                            Whether you're involved in a new installation or upgrading an existing project, our application is a game-changer. <br>
+                            Save time and effort with seamless load calculations and equipment searches in the <b>residential HVAC marketplace</b>. <br>
+                            Join the forefront of the industry's new generation in <b>HVAC system design and selection</b>. <br>
+                            Don't wait any longer to be part of the innovation!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Unkuna CDN js -->
+<script src="https://cdn.unkuna.org/v0.9.0/javascript/unkuna.js"></script> 
+</html>

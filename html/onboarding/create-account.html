@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- CDN CSS       -->
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/css/unkuna.css">
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/theme/unkuna-theme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+     <!-- cdn repo styles -->     
+    <link rel="stylesheet" href="../../css/cdn/shared/style.css">
+    <link rel="stylesheet" href="../../css/cdn/shared/responsive.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/style.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/responsive.css">
+    <!-- Contractors repo styles -->     
+    <link rel="stylesheet" href="../../css/contractors/style.css">
+
+    <!-- SOLO PARA QUE HTML SE PAREZCA A LA APLICACION -->
+     <link rel="stylesheet" href="css/html-styles.css">
+</head>
+<body>
+    <div class="cc-onboarding cc-bg-img">
+        <!-- CoolCalc logo. -->
+        <div class="cc-ob-logo">
+            <div class="logo-section nkn-hide-s">
+                <a href="/home.html">
+                    <img src="https://cdn.pitusiray.dev/images/logo-cc-w.png" alt="Logo" width="100">
+                </a>
+            </div>
+            <div class="logo-section nkn-hide-m nkn-hide-l nkn-hide-xl">
+                <a href="/home.html">
+                    <img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="100">
+                </a>
+            </div>
+        </div>
+        <div class="nkn-container nkn-pb-large">
+            <div class="cc-card">
+    
+                <!-- Stepper Onboarding -->
+                <div class="nkn-row">
+                    <div class="nkn-col-m12">
+                        <div class="ob-stepper-list">
+                            <div class="ob-stepper-item">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">USER</div>
+                            </div>
+                            <div class="ob-stepper-item cc-active">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">ACCOUNT TYPE</div>
+                            </div>
+                            <div class="ob-stepper-item">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">COMPLETED</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <!-- Create Account -->
+                    <div class="nkn-row-padding cc-center">
+                        <div class="nkn-col-m4 nkn-p-large">
+                            <div class="nkn-row cc-center">
+                                <div class="nkn-col-m10">
+                                    <div class="cc-box-shadow">
+                                        <div class="cc-card-info nkn-center">
+                                            <div class="cc-icon">
+                                                <svg>
+                                                    <use xlink:href="/images/icons.svg#company-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="cc-info">
+                                                <h3>New Account</h3>
+                                                <p>
+                                                    Exciting news!
+                                                    Your new account in CoolCalc is your go-to hub for organizing everything.
+                                                    From adding team members to creating and assigning projects, you're in control of it all, and there's plenty more to explore!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nkn-col-m8">
+                            <div class="nkn-row cc-center">
+                                <div class="nkn-col-m10">
+                                    <h3 class="nkn-text-center nkn-my-large">Account Information</h3>
+                                    <form name="createAccount" action="" class="nkn-form nkn-text-left cc-form nkn-mb-large">
+                                        <div class="nkn-row-padding">
+                                            <div class="nkn-col-s12 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="organizationName">Account Name:</label>
+                                                <input class="nkn-input" id="organizationName" name="organizationName" type="text" required>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="cc-center end nkn-my-medium cc-w-100">
+                                        <button class="nkn-button cc-btn cc-primary nkn-mr-small" data-fifty-one-role="save">Save</button>
+                                        <button class="nkn-button cc-btn cc-outline cc-primary cc-center" data-fifty-one-role="continue">
+                                            Continue
+                                            <svg class="nkn-icon cc-icon">
+                                                <use xlink:href="/images/icons.svg#continue-icon"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="nkn-modal-container">
+        <div id="modal-1" data-fifty-one-resources="[&quot;onboardingInvitation&quot;]" data-fifty-one-opts="{ &quot;closeOnSave&quot;: true }" class="nkn-modal nkn-medium">
+            <!-- Fifty-One library will insert static HTML for the resources identified in the above "data-fifty-one-resources" attribute here. -->
+       </div>
+    </div>
+</body>
+<!-- Unkuna CDN js -->
+<script src="https://cdn.unkuna.org/v0.9.0/javascript/unkuna.js"></script> 
+</html>

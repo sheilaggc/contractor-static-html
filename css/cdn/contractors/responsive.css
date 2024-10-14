@@ -1,0 +1,257 @@
+ /* Responsive Styles */
+ @media screen and (min-width: 992px) and (max-width: 1080px) {
+    .cc-card-ahri .cc-card-title .cc-title-info {
+        max-width: 75%;
+    }
+
+    .cc-card-ahri .cc-numbers>div {
+        max-width: 48%;
+        min-width: 48%;
+    }
+
+    .cc-card-body .cc-ratings .cc-electrical,
+    .cc-card-body .cc-ratings .cc-furnace {
+        width: 50%;
+    }
+
+    .cc-card-body .cc-ratings .cc-available-rebates {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .cc-toggle-sidebar,
+    .cc-toggle-sidebar+label {
+        display: none;
+    }
+    .ob-stepper-list {
+       width: 100%;
+     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .cc-card-ahri .cc-card-title .cc-title-info {
+        max-width: 75%;
+    }
+
+    .cc-card-ahri .cc-numbers>div {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .cc-card-body .cc-ratings .cc-electrical,
+    .cc-card-body .cc-ratings .cc-furnace,
+    .cc-card-body .cc-ratings .cc-available-rebates {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cc-location {
+       display: flex;
+        flex-direction: column-reverse;
+        padding: 0.1rem;
+    }
+
+    .cc-form.cc-float {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+
+    #map {
+        height: 250px;
+        margin: .5rem 0;
+    }
+
+    .cc-utility-accounts .cc-radio-text svg,
+    .cc-workscope .cc-radio-text svg,
+    .cc-dwelling-info .cc-radio-text svg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cc-message {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cc-onboarding {
+        background: var(--background-color);
+        height: auto;
+    }
+
+    .cc-onboarding .cc-content .cc-card-info {
+        margin-top: 1.5rem;
+        border: 1px solid var(--primary-color);
+        border-radius: .4rem;
+        color: var(--primary-color);
+        padding: .5rem;
+        background-color: #eef6f8;
+    }
+
+    .cc-onboarding .cc-content .cc-card-info h3 {
+        margin: .15rem 0;
+    }
+
+    .cc-onboarding .cc-content .cc-card-info p {
+        line-height: 16px;
+    }
+    /*Navigations*/
+    /*Vertical navigation for accounts*/
+    .cc-nav.cc-vertical.cc-nav-account .cc-nav-toggle {
+       display: flex;
+       float: none;
+       padding: 0 1rem 0 0;
+   }
+   .cc-nav.cc-vertical.cc-nav-account .cc-dropdown-icon {
+       display: block;
+       position: absolute;
+       right: 0;
+       top: 50%;
+       transform: translateY(-50%);
+       transition: transform 0.3s ease;
+       color: var(--gray-dark-1-color);
+   }
+   .cc-account-info .cc-nav-menu.cc-active ~ .cc-dropdown-icon{
+       transform: rotate(180deg);
+   }
+
+   /*Horizontal navigation for Workscopes*/
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-toggle {
+       /*float: none;*/
+   }
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-menu{
+       display: block;
+       margin-bottom: 1rem;
+       background-color: white;
+       border-radius: .4rem;
+       box-shadow: 0 0 10px #cdcdcd;
+   }
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-menu li{
+       display: none;
+   }
+
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-menu li.cc-active{
+       display: block;
+       margin-right: 3.25rem;
+       box-shadow: none;
+   }
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-menu.cc-active li{
+       display: block;
+       margin-right: 3.25rem;
+   }
+   .cc-nav.cc-horizontal.cc-tab.cc-nav-workscope .cc-nav-menu.cc-active li:nth-child(2){
+       border-top: 1px solid #eaeaea;
+       border-radius: 0;
+   }
+
+    /*Button add*/
+    .cc-btn-add {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cc-btn-add svg {
+        height: 26px;
+        width: 26px;
+    }
+
+    .cc-hvac-system {
+        flex-direction: column;
+        padding: 0.1rem;
+    }
+
+    .cc-lateral-nav-account {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cc-lateral-nav-account li {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        flex: 1;
+        max-width: 25%;
+        min-width: 25%;
+    }
+
+    .cc-lateral-nav-account li>span[data-fifty-one-role="_title"]:not(:empty),
+    .cc-lateral-nav-account li>span[data-fifty-one-role="_title"]:not(:empty)+.nkn-icon {
+        min-height: 30px;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+    }
+
+    .cc-lateral-nav-account li svg {
+        margin-right: 0;
+    }
+
+    .cc-card-ahri .cc-numbers>div,
+    .cc-card-ahri .cc-card-body>div {
+        min-width: 50%;
+        max-width: 100%;
+    }
+
+    .cc-card-ahri .cc-card-title {
+        display: block;
+    }
+
+    .cc-card-title>div {
+        width: 100%;
+    }
+
+    .cc-card-ahri .cc-card-title .cc-title-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cc-card-ahri .cc-ahri-price {
+        position: relative;
+        right: auto;
+        margin-bottom: .5rem;
+    }
+
+    .cc-card-ahri .cc-ahri-price {
+        width: 100%;
+    }
+
+    .ob-stepper-item .ob-name, .ob-stepper-item.completed .ob-name {
+       display: none;
+   }
+   .ob-stepper-item.cc-active .ob-name{
+       display: inline-block;
+       width: 150%;
+       text-align: center;
+       font-size: 10px;
+       line-height: 21px;
+   }
+   .ob-stepper-list {
+       width: 100%;
+       margin-left: 0;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .cc-card-ahri .cc-card-title .cc-title-info {
+        max-width: 100%;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .cc-lateral-nav-account li>span[data-fifty-one-role="_title"]:not(:empty),
+    .cc-lateral-nav-account li>span[data-fifty-one-role="_title"]:not(:empty)+.nkn-icon {
+        font-size: 10px;
+    }
+}

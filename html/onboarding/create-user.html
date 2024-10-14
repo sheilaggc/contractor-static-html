@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    
+    <!-- CDN CSS       -->
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/css/unkuna.css">
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/theme/unkuna-theme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+     <!-- cdn repo styles -->     
+    <link rel="stylesheet" href="../../css/cdn/shared/style.css">
+    <link rel="stylesheet" href="../../css/cdn/shared/responsive.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/style.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/responsive.css">
+    <!-- Contractors repo styles -->     
+    <link rel="stylesheet" href="../../css/contractors/style.css">
+
+    <!-- SOLO PARA QUE HTML SE PAREZCA A LA APLICACION -->
+     <link rel="stylesheet" href="css/html-styles.css">
+</head>
+<body>
+    <div class="cc-onboarding cc-bg-img">
+        <!-- CoolCalc logo. -->
+        <div class="cc-ob-logo">
+            <div class="logo-section nkn-hide-s">
+                <a href="/home.html">
+                    <img src="https://cdn.pitusiray.dev/images/logo-cc-w.png" alt="Logo" width="100">
+                </a>
+            </div>
+            <div class="logo-section nkn-hide-m nkn-hide-l nkn-hide-xl">
+                <a href="/home.html">
+                    <img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="100">
+                </a>
+            </div>
+        </div>
+        <div class="nkn-container nkn-pb-large">
+            <div class="cc-card">
+    
+                <!-- Stepper Onboarding -->
+                <div class="nkn-row">
+                    <div class="nkn-col-m12">
+                        <div class="ob-stepper-list">
+                            <div class="ob-stepper-item cc-active">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">USER</div>
+                            </div>
+                            <div class="ob-stepper-item">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">ACCOUNT TYPE</div>
+                            </div>
+                            <div class="ob-stepper-item">
+                                <div class="ob-counter"></div>
+                                <div class="ob-name">COMPLETED</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <!-- Create User Account -->
+                    <div class="nkn-row-padding cc-center">
+                        <div class="nkn-col-m4 nkn-p-large">
+                            <div class="nkn-row cc-center">
+                                <div class="nkn-col-m10">
+                                    <div class="cc-box-shadow">
+                                        <div class="cc-card-info nkn-center">
+                                            <div class="cc-icon">
+                                                <svg>
+                                                    <use xlink:href="/images/icons.svg#user-password-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="cc-info">
+                                                <h3>User Account</h3>
+                                                <p>
+                                                    Let’s get you set up to start your first onboarding experience! <br>
+                                                    Add your personal details or create your new user account <b>with Google</b> to make it quick and easy!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="cc-title-separator nkn-text-center nkn-my-large cc-w-100"></p>
+                                    <button id="google-btn" class="nkn-mb-large">
+                                        <span class="icon"></span>
+                                        <span class="buttonText">JOIN WITH GOOGLE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nkn-col-m8">
+                            <div class="nkn-row cc-center">
+                                <div class="nkn-col-m10">
+                                    <h3 class="nkn-text-center nkn-my-large cc-w-100">User Information</h3>
+                                    <form name="onboarding" action="" class="nkn-form nkn-text-left cc-form nkn-mb-large cc-w-100">
+                                        <div class="nkn-row-padding">
+                                            <div class="nkn-col-s6 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="firstName">First Name:</label>
+                                                <input class="nkn-input" id="firstName" name="firstName" type="text" required>
+                                            </div>
+                                            <div class="nkn-col-s6 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="lastName">Last Name:</label>
+                                                <input class="nkn-input" id="lastName" name="lastName" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="nkn-row-padding nkn-mb-medium">
+                                            <div class="nkn-col-s12 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="email">Email:</label>
+                                                <input class="nkn-input" id="email" name="email" type="text" required>
+                                            </div>
+                                        </div>
+                                        <div class="nkn-row-padding">
+                                            <div class="nkn-col-s12 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="username">Username:</label>
+                                                <input class="nkn-input" id="username" name="username" type="text" required>
+                                            </div>
+                                            <div class="nkn-col-s12 nkn-mb-medium">
+                                                <label class="nkn-label-middle" for="password">Password:</label>
+                                                <input class="nkn-input" id="password" name="password" type="password" minlength="8" required>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                
+                                    <div class="cc-center end nkn-my-medium cc-w-100">
+                                        <button class="nkn-button cc-btn cc-primary cc-center cc-w-100">
+                                            <a href="account-type.html" class="cc-center">
+                                                Continue
+                                                <svg class="nkn-icon cc-icon">
+                                                    <use xlink:href="/images/icons.svg#continue-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="nkn-modal-container">
+        <div id="modal-1" data-fifty-one-resources="[&quot;onboardingInvitation&quot;]" data-fifty-one-opts="{ &quot;closeOnSave&quot;: true }" class="nkn-modal nkn-medium">
+            <!-- Fifty-One library will insert static HTML for the resources identified in the above "data-fifty-one-resources" attribute here. -->
+       </div>
+    </div>
+</body>
+<!-- Unkuna CDN js -->
+<script src="https://cdn.unkuna.org/v0.9.0/javascript/unkuna.js"></script> 
+</html>

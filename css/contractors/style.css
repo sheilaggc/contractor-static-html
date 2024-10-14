@@ -1,0 +1,347 @@
+.cc-home>div.nkn-container {
+    height: 100vh;
+}
+
+@media (max-height: 750px) {
+    .cc-home>div.nkn-container {
+        height: auto;
+    }
+}
+
+/* -- Welcome card -- */
+.cc-welcome {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+    .cc-welcome {
+        font-size: 110%;
+        line-height: 2.25rem;
+        color: var(--gray-dark-1-color);
+    }
+}
+
+
+/* -- Spinner -- */
+.cc-spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.1s linear;
+    opacity: 0;
+    height: 100vh;
+    transform: scale(10);
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.cc-spinner-charge {
+    animation-play-state: paused;
+    border: 5px solid rgba(200, 200, 200, 1);
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+    border-left-color: rgba(200, 200, 200, 0.4);
+    width: 100%;
+    height: 100%;
+    animation-play-state: running;
+}
+
+.cc-spinner-text, .cc-spinner-icons, .cc-spinner-icons svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cc-spinner-text {
+    color: white;
+    top: 56%;
+    text-align: center;
+}
+
+.cc-spinner-icons {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.8);
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+.cc-spinner-icons svg {
+    font-size: 48px;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    line-height: 1;
+    transform: scale(0) translate3d(0, 0, 0);
+}
+
+.cc-spinner-icons svg:nth-of-type(1) {
+    animation: loadicons 8s infinite ease-in-out;
+}
+
+.cc-spinner-icons svg:nth-of-type(2) {
+    animation: loadicons 8s 2s infinite ease-in-out;
+}
+
+.cc-spinner-icons svg:nth-of-type(3) {
+    animation: loadicons 8s 4s infinite ease-in-out;
+}
+
+.cc-spinner-icons svg:nth-of-type(4) {
+    animation: loadicons 8s 6s infinite ease-in-out;
+}
+
+@keyframes loadicons {
+    0% {
+        transform: scale(0) translate3d(0, 0, 0);
+    }
+
+    11% {
+        transform: scale(1.2) translate3d(0, 0, 0);
+    }
+
+    22% {
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+
+    33% {
+        transform: scale(0) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* background house style in hvac System Design */
+.hvac-design-details {
+    position: relative;
+    background-image: url('/images/house_bg.jpg');
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hvac-design-details .cc-indoor-dc,
+.hvac-design-details .cc-ventilation,
+.hvac-design-details .cc-hot-water-piping{
+    display: none;
+}
+
+.cc-btn-unit {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1rem;
+    min-width: 150px;
+}
+
+.cc-btn-unit svg {
+    height: 16px;
+    width: 16px;
+}
+
+.btn-outdoor {
+    bottom: 8.25rem;
+    left: 5rem;
+}
+
+.btn-indoor {
+    top: 1rem;
+    right: 1rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-furnace {
+    bottom: 1rem;
+    right: 1rem;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.cc-hvac-option {
+    flex: 1;
+    margin: 10px 4px;
+}
+
+.cc-hvac-option svg {
+    height: 40px;
+    width: 40px;
+}
+
+.cc-btn-unit .cc-center {
+    flex-direction: column;
+}
+
+.cc-btn-unit .cc-unit-info .cc-img {
+    height: 60px;
+    width: 60px;
+    margin-right: 1rem;
+}
+
+.cc-btn-unit .cc-unit-info .cc-center {
+    flex-direction: row;
+}
+
+.cc-btn-unit .cc-unit-info .cc-info .cc-text-small {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--gray-color);
+}
+
+.cc-btn-unit .cc-unit-info .cc-info .cc-text-info {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/*method mj8 house bg*/
+.mj8-method .hvac-design-details{
+    display: inline-flex;
+    justify-content: space-around;
+    background: none;
+    height: auto;
+    background-color: #eef3f7;
+    padding: .5rem 0.25rem;
+    border-radius: .5rem;
+}
+.mj8-method .hvac-design-details .cc-indoor-dc,
+.mj8-method .hvac-design-details .cc-ventilation,
+.mj8-method .hvac-design-details .cc-hot-water-piping{
+    display: initial;
+}
+
+.mj8-method .hvac-design-details .cc-btn-unit{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: .25rem;
+}
+.mj8-method .hvac-design-details .cc-btn-unit .cc-unit-add-icon,
+.mj8-method .hvac-design-details .cc-unit-info .cc-info,
+.mj8-method .hvac-design-details .cc-radio.cc-img input:checked + .cc-radio-text span{
+    display: none;
+}
+.mj8-method .hvac-design-details .cc-unit.cc-heating-cooling {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.mj8-method .hvac-design-details .cc-radio-text{
+    margin: 0;
+    border-radius: 5px;
+}
+.mj8-method .hvac-design-details .cc-unit-info .cc-img{
+    height: 35px;
+    width: 35px;
+    margin-right: 0;
+}
+.mj8-method .hvac-design-details .cc-radio-text svg{
+    width: 60px;
+    height: 60px;
+    padding: .7rem;
+}
+.mj8-method .hvac-design-details .cc-radio.cc-img input:checked + .cc-radio-text{
+    border-width: 1px;
+
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .hvac-design-details {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hvac-design-details {
+        height: auto;
+        background-image: none;
+    }
+
+    .cc-btn-unit {
+        position: relative;
+        display: block;
+        bottom: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 80%;
+    }
+
+    .cc-unit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cc-unit.cc-outdoor {
+        background-color: #e3eff8;
+    }
+
+    .cc-unit.cc-furnace {
+        background-color: #f7ede9;
+    }
+
+    .cc-unit.cc-indoor {
+        background-color: #e8f6f4;
+    }
+
+    .cc-radio-text {
+        padding: .5rem 1.5rem;
+    }
+
+    .cc-unit.cc-heating-cooling {
+        background-color: #f2f2f2;
+    }
+
+    .cc-radio-text svg {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-indoor, .btn-outdoor, .btn-furnace {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .cc-hvac-menu {
+        display: block;
+    }
+
+    .cc-hvac-option {
+        width: 100%;
+    }
+}
+
+@media (min-height: 575px) and (max-width: 1490px) {
+    .hvac-design-details {
+        height: 628px;
+    }
+}

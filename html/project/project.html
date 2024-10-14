@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+    <!-- CDN CSS       -->
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/css/unkuna.css">
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/theme/unkuna-theme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+     <!-- cdn repo styles -->     
+    <link rel="stylesheet" href="../../css/cdn/shared/style.css">
+    <link rel="stylesheet" href="../../css/cdn/shared/responsive.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/style.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/responsive.css">
+    <!-- Contractors repo styles -->     
+    <link rel="stylesheet" href="../../css/contractors/style.css">
+
+    <!-- SOLO PARA QUE HTML SE PAREZCA A LA APLICACION -->
+     <link rel="stylesheet" href="../../css/html-styles.css">
+</head>
+<body>
+    <!-- CoolCalc branded header and user menu. -->
+    <header class="cc-main-header">
+        <div class="nkn-container cc-center between">
+    
+            <!-- CoolCalc logo. -->
+            <div class="nkn-col-s2 nkn-col-m4 nkn-col-l6 cc-center start logo-section">
+                <a href="/home.html"><img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="100px"></a>
+            </div>
+    
+            <!-- User menu. -->
+            <nav class="cc-nav cc-horizontal">
+                <div class="cc-nav-toggle">☰</div>
+                <ul class="cc-nav-menu">
+                    <li class="cc-item"><a href="index.html">Home</a></li>
+                    
+                    <!-- The following links will display only when the user is logged in. -->
+                    <li class="cc-item">My projects</li>
+                    <li class="cc-item">My accounts</li>
+                    <li class="cc-item cc-item-dropdown cc-center">
+                        <div class="cc-dropdown-title cc-center">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="images/icons.svg#user-color-icon"></use>
+                            </svg>
+                            <span>USER NAME</span>
+                        </div>                    
+                        <ul class="cc-dropdown-content">
+                            <li class="cc-item">My profile</li>
+                            <li class="cc-item">Log out</li>
+                        </ul>
+                    </li>
+                    <!-- End of logged in links. -->
+    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cc-contractor-content nkn-py-small">
+        <div class="nkn-container nkn-mt-large">
+            <div class="nkn-clear nkn-mb-small">
+                <div class="nkn-left">
+                    <button class="nkn-button cc-back-btn" data-fifty-one-role="back">
+                        <div class="cc-center">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="/images/icons.svg#back-icon"></use>
+                            </svg>
+                            Back
+                        </div>
+                    </button>
+                </div>
+                <div class="nkn-right">
+                    <ul class="cc-breadcrumb" data-fifty-one-role="breadcrumb">
+                        <li class="cc-item-breadcrumb" data-fifty-one-role="template"></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="nkn-row-padding nkn-flex cc-project">
+                <nav class="nkn-col-s12 nkn-col-l2 nkn-col-xl-1 cc-nav-menu cc-nav cc-vertical cc-sidebar">
+                    <ul class="cc-nav-menu">
+                        <li class="cc-item">
+                            <a href="project.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#project-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Project
+                                </span>   
+                            </a>             
+                        </li>
+                        <li class="cc-item">
+                            <a href="workscope.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#workscope-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Workscopes
+                                </span>
+                            </a>
+                        </li>
+                        <li class="cc-item">
+                            <a href="design-details.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#design-details-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Design Details
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="cc-item">
+                            <a href="results.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#results-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Results
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="nkn-col-s12 nkn-col-l10 nkn-col-xl11">
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-m5">
+                            <div class="cc-card">
+                                <form name="project" action="" class="nkn-form cc-form">
+                                    <div class="cc-title nkn-mb-small">
+                                        <span class="cc-text">PROJECT INFO</span>
+                                    </div>
+                                    <div class="nkn-row-padding">
+                                        <div class="nkn-col-s12">
+                                            <label class="nkn-label-middle">Project Name:</label>
+                                            <input class="nkn-input" name="projectName" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="nkn-row-padding">
+                                        <div class="nkn-col-s12">
+                                            <label class="nkn-label-middle">Account:</label>
+                                            <div class="cc-center between">
+                                                <select class="nkn-select" name="account" required>
+                                                    <option value="">Select</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nkn-row-padding">
+                                        <div class="nkn-col-s12">
+                                            <label class="nkn-label-middle">Team member:</label>
+                                            <div class="cc-center between">
+                                                <select class="nkn-select" name="teamMember" required>
+                                                    <option value="">Select</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cc-card cc-customer nkn-mt-medium">
+                                <div class="cc-title">
+                                    <span class="cc-text">Customer</span>
+                                </div>
+                                <div class="nkn-row-padding">
+                                    <!--<div class="nkn-col-s12">
+                                        <div class="cc-center between">
+                                            <select class="nkn-select" name="customer" required>
+                                                <option value="">Select</option>
+                                            </select>
+                                            <button class="nkn-button cc-btn cc-outline cc-icon">
+                                                <svg class="nkn-icon cc-icon">
+                                                    <use xlink:href="/images/icons.svg#view-more-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>-->
+                                    <div class="nkn-col-m12">
+                                        <div class="cc-autocomplete">
+                                            <input class="nkn-input" type="text" id="search-input" placeholder="Buscar o agregar..." />
+                                            <ul id="cc-autocomplete-list" class="cc-autocomplete-list">
+                                              <!-- Lista de elementos aquí -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nkn-col-m7">
+                            <div class="nkn-row">
+                                <div class="nkn-col-m12 cc-location">
+                                    <div class="content" id="map">
+                                    </div>
+                                    <div class="cc-card cc-form cc-float">
+                                        <form name="location" action="" class="nkn-form cc-form">
+                                            <div class="nkn-row-padding">
+                                                <div class="nkn-col-s12">
+                                                    <label class="nkn-label-middle">Address:</label>
+                                                    <div id="geocoder"></div>
+                                                    <!-- hiden address input-->
+                                                    <input type="hidden" class="nkn-input" name="address" id="address" required/>
+                                                </div>
+                                            </div>
+                                        </form>
+                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-m12">
+                            <div class="cc-center end nkn-my-medium">
+                                <button class="nkn-button cc-btn cc-primary nkn-mr-small cc-center">Save</button>
+                                <button class="nkn-button cc-btn cc-outline cc-primary cc-center">
+                                    Continue
+                                    <svg class="nkn-icon cc-icon">
+                                        <use xlink:href="/images/icons.svg#continue-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="nkn-modal-container">
+        <div id="modal-1" class="nkn-modal nkn-medium">
+            <div class="nkn-modal-heading">
+                Customer
+                <div class="nkn-icon-close" data-nkn-role="close-modal">
+                    <svg class="nkn-icon">
+                        <use xlink:href="/images/icons.svg#close-icon"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="nkn-modal-content">
+                <form action="">
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-s12">
+                            <label class="nkn-label-middle">Customer Name:</label>
+                            <input class="nkn-input" name="customer" id="customer" required/>
+                        </div>
+                    </div>
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-s12">
+                            <label class="nkn-label-middle">Address:</label>
+                            <input class="nkn-input" name="address" id="address" required/>
+                        </div>
+                    </div>
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-s12">
+                            <label class="nkn-label-middle">Email:</label>
+                            <input class="nkn-input" type="email" name="email" id="email" required/>
+                        </div>
+                    </div>
+                    <div class="nkn-row-padding">
+                        <div class="nkn-col-s12">
+                            <label class="nkn-label-middle">Phone:</label>
+                            <input class="nkn-input" type="tel" name="phone" id="phone" required/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="nkn-modal-footer cc-center end">
+                <button class="nkn-button cc-btn cc-primary nkn-mr-small cc-center">Save</button>
+            </div>
+       </div>
+    </div>
+</body>
+<script src="https://cdn.unkuna.org/v0.9.0/javascript/unkuna.js"></script> 
+<script>
+    const searchInput = document.getElementById('search-input');
+    const suggestionsList = document.getElementById('cc-autocomplete-list');
+
+    const elements = ['Cliente 1', 'Cliente 2', 'Cliente 3', 'Cliente 4'];
+
+    function showSuggestions(value) {
+    suggestionsList.innerHTML = ''; 
+    let filtered = elements.filter(element => element.toLowerCase().includes(value.toLowerCase()));
+
+    filtered.forEach(element => {
+        const li = document.createElement('li');
+        li.textContent = element;
+        li.onclick = () => {
+        searchInput.value = element; 
+        suggestionsList.style.display = 'none'; 
+        };
+        suggestionsList.appendChild(li);
+    });
+
+    if (value && !filtered.length) {
+    const addNewLi = document.createElement('li');
+    addNewLi.textContent = ``;
+    addNewLi.classList.add('add-new');
+
+    // Crear el botón
+    const addButton = document.createElement('button');
+    addButton.className = "cc-btn cc-list-btn";
+    addButton.textContent = 'ADD NEW CUSTOMER';
+    addButton.classList.add('add-new-button');
+    addButton.setAttribute('data-nkn-role', 'open-modal');
+    addButton.setAttribute('data-nkn-target', 'modal-1');
+
+    // Añadir el botón dentro del li
+    addNewLi.appendChild(addButton);
+    suggestionsList.appendChild(addNewLi);
+  }
+
+    suggestionsList.style.display = filtered.length || value ? 'block' : 'none'; // Mostrar lista solo si hay resultados
+    }
+
+    searchInput.addEventListener('input', (e) => {
+    showSuggestions(e.target.value);
+    });
+</script>
+</html>

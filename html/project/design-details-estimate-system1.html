@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+    <!-- CDN CSS       -->
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/css/unkuna.css">
+    <link rel="stylesheet" href="https://cdn.unkuna.org/v0.9.0/theme/unkuna-theme.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+     <!-- cdn repo styles -->     
+    <link rel="stylesheet" href="../../css/cdn/shared/style.css">
+    <link rel="stylesheet" href="../../css/cdn/shared/responsive.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/style.css">
+    <link rel="stylesheet" href="../../css/cdn/contractors/responsive.css">
+    <!-- Contractors repo styles -->     
+    <link rel="stylesheet" href="../../css/contractors/style.css">
+
+    <!-- SOLO PARA QUE HTML SE PAREZCA A LA APLICACION -->
+     <link rel="stylesheet" href="../../css/html-styles.css">
+</head>
+<body>
+    <!-- CoolCalc branded header and user menu. -->
+    <header class="cc-main-header">
+        <div class="nkn-container cc-center between">
+    
+            <!-- CoolCalc logo. -->
+            <div class="nkn-col-s2 nkn-col-m4 nkn-col-l6 cc-center start logo-section">
+                <a href="/home.html"><img src="https://cdn.pitusiray.dev/images/logo-cc.png" alt="Logo" width="100px"></a>
+            </div>
+    
+            <!-- User menu. -->
+            <nav class="cc-nav cc-horizontal">
+                <div class="cc-nav-toggle">☰</div>
+                <ul class="cc-nav-menu">
+                    <li class="cc-item"><a href="index.html">Home</a></li>
+                    
+                    <!-- The following links will display only when the user is logged in. -->
+                    <li class="cc-item">My projects</li>
+                    <li class="cc-item">My accounts</li>
+                    <li class="cc-item cc-item-dropdown cc-center">
+                        <div class="cc-dropdown-title cc-center">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="images/icons.svg#user-color-icon"></use>
+                            </svg>
+                            <span>USER NAME</span>
+                        </div>                    
+                        <ul class="cc-dropdown-content">
+                            <li class="cc-item">My profile</li>
+                            <li class="cc-item">Log out</li>
+                        </ul>
+                    </li>
+                    <!-- End of logged in links. -->
+    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cc-contractor-content nkn-py-small">
+        <div class="nkn-container nkn-mt-large">
+            <div class="nkn-clear nkn-mb-small">
+                <div class="nkn-left">
+                    <button class="nkn-button cc-back-btn" data-fifty-one-role="back">
+                        <div class="cc-center">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="/images/icons.svg#back-icon"></use>
+                            </svg>
+                            Back
+                        </div>
+                    </button>
+                </div>
+                <div class="nkn-right">
+                    <ul class="cc-breadcrumb" data-fifty-one-role="breadcrumb">
+                        <li class="cc-item-breadcrumb" data-fifty-one-role="template"></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="nkn-row-padding nkn-flex cc-project">
+                <nav class="nkn-col-s12 nkn-col-l2 nkn-col-xl-1 cc-nav-menu cc-nav cc-vertical cc-sidebar">
+                    <ul class="cc-nav-menu">
+                        <li class="cc-item">
+                            <a href="project.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#project-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Project
+                                </span>   
+                            </a>             
+                        </li>
+                        <li class="cc-item">
+                            <a href="workscope.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#workscope-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Workscopes
+                                </span>
+                            </a>
+                        </li>
+                        <li class="cc-item cc-active">
+                            <a href="design-details.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#design-details-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Design Details
+                                </span>
+                            </a>
+                            
+                        </li>
+                        <li class="cc-item">
+                            <a href="results.html">
+                                <svg class="nkn-icon cc-icon">
+                                    <use xlink:href="/images/icons.svg#results-color-icon"></use>
+                                </svg>
+                                <span>
+                                    Results
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="nkn-col-s12 nkn-col-l10 nkn-col-xl11">
+                    <nav class="cc-nav cc-horizontal cc-tab cc-nav-workscope">
+                        <div class="cc-nav-toggle">
+                            <svg class="nkn-icon cc-icon">
+                                <use xlink:href="images/icons.svg#more-icon"></use>
+                            </svg>
+                        </div>
+                        <ul class="cc-nav-menu" id="widget-list">
+                            <li class="cc-item">
+                                <a href="design-details-method.html">
+                                    <h3>LOAD CALCULATION</h3>
+                                    <p>METHOD</p>
+                                </a>                                
+                            </li>
+                            <li class="cc-item cc-active">
+                                <a href="design-details-estimate-system1.html">
+                                    <h3>AC + FURNACE</h3>
+                                    <p>WorkScope 1</p>
+                                </a>
+                                
+                            </li>
+                            <li class="cc-item">
+                                <h3>ERV</h3>
+                                <p>WorkScope 2</p>
+                            </li>
+                        </ul>
+                    </nav>
+                    <style>
+                        datalist {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        writing-mode: vertical-lr;
+                        }
+
+                        option {
+                        padding: 0;
+                        }
+
+                        input[type="range"] {
+                        margin: 0;
+                        }
+
+                    </style>
+
+                    <div class="cc-card">
+                        <form name="loadCalculation" action="" class="nkn-form cc-form">
+                            <div class="nkn-row cc-center">
+                                <div class="nkn-col-m8">
+                                    <div class="nkn-row">
+                                        <div class="nkn-col-m12">
+                                            <label for="windows">WINDOWS</label><br />
+                                            <input type="range" id="windows" name="windows" list="values" step="25" class="cc-w-100" />
+
+                                            <datalist id="values"  class="cc-w-100">
+                                                <option value="0" label="0"></option>
+                                                <option value="25" label="25"></option>
+                                                <option value="50" label="50"></option>
+                                                <option value="75" label="75"></option>
+                                                <option value="100" label="100"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="nkn-col-m12">
+                                            <label for="walls">WALLS</label><br />
+                                            <input type="range" id="walls" name="walls" list="values" step="25" class="cc-w-100" />
+
+                                            <datalist id="values"  class="cc-w-100">
+                                                <option value="0" label="0"></option>
+                                                <option value="25" label="25"></option>
+                                                <option value="50" label="50"></option>
+                                                <option value="75" label="75"></option>
+                                                <option value="100" label="100"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="nkn-col-m12">
+                                            <label for="ducts">DUCTS</label><br />
+                                            <input type="range" id="ducts" name="ducts" list="values" step="25" class="cc-w-100" />
+
+                                            <datalist id="values"  class="cc-w-100">
+                                                <option value="0" label="0"></option>
+                                                <option value="25" label="25"></option>
+                                                <option value="50" label="50"></option>
+                                                <option value="75" label="75"></option>
+                                                <option value="100" label="100"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="nkn-col-m12">
+                                            <label for="infiltration">INFILTRATION</label><br />
+                                            <input type="range" id="infiltration" name="infiltration" list="values" step="25" class="cc-w-100" />
+
+                                            <datalist id="values"  class="cc-w-100">
+                                                <option value="0" label="0"></option>
+                                                <option value="25" label="25"></option>
+                                                <option value="50" label="50"></option>
+                                                <option value="75" label="75"></option>
+                                                <option value="100" label="100"></option>
+                                            </datalist>
+                                        </div>
+                                        <div class="nkn-col-m12">
+                                            <label for="insulation">INSULATION</label><br />
+                                            <input type="range" id="insulation" name="insulation" list="values" step="25" class="cc-w-100" />
+
+                                            <datalist id="values"  class="cc-w-100">
+                                                <option value="0" label="0"></option>
+                                                <option value="25" label="25"></option>
+                                                <option value="50" label="50"></option>
+                                                <option value="75" label="75"></option>
+                                                <option value="100" label="100"></option>
+                                            </datalist>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    
+                        <div class="nkn-row-padding">
+                            <div class="nkn-col-m12">
+                                <div class="cc-center end nkn-my-medium">
+                                    <button class="nkn-button cc-btn cc-primary nkn-mr-small cc-center" data-fifty-one-role="save">Save</button>
+                                    <button class="nkn-button cc-btn cc-outline cc-primary cc-center" data-fifty-one-role="continue">
+                                        Continue
+                                        <svg class="nkn-icon cc-icon">
+                                            <use xlink:href="/images/icons.svg#continue-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Unkuna CDN js -->
+<script src="https://cdn.unkuna.org/v0.9.0/javascript/unkuna.js"></script> 
+</html>

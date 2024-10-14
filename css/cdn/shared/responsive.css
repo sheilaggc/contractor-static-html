@@ -1,0 +1,280 @@
+/*Responsive*/
+.cc-nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 992px) {
+    .cc-sidebar {
+      display: block;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 1rem;
+      overflow-y: auto;
+      width: 150px;
+      margin-bottom: 1rem;
+      bottom: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+  
+    .cc-form.cc-float {
+      width: 55%;
+    }
+  
+    /*The reduced table styles were added for screens smaller than 991px, 
+        since our application has a sidebar and does not use 100 of the screen, 
+        for everything that is inside the container with id="coolcalc" */
+    #coolcalc table.nkn-reduced thead {
+      display: none;
+    }
+  
+    #coolcalc table.nkn-reduced tbody tr {
+      position: relative;
+      display: block;
+      border-left: solid 1px var(--nkn-border-color);
+      border-right: solid 1px var(--nkn-border-color);
+      border-bottom: solid 1px var(--nkn-border-color);
+    }
+  
+    #coolcalc table.nkn-reduced td {
+      border: none;
+    }
+  
+    #coolcalc table.nkn-reduced td.nkn-title {
+      color: black;
+      display: block;
+      padding-bottom: 0;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  
+    #coolcalc table.nkn-reduced td.nkn-description {
+      display: block;
+      font-size: 0.8rem;
+      padding-top: .25rem;
+    }
+  
+    #coolcalc table.nkn-reduced td.nkn-description.cc-table-icon {
+      display: inline-block;
+    }
+  
+    #coolcalc table.nkn-reduced td.nkn-right-top {
+      position: absolute;
+      right: .5rem;
+      top: 0;
+      font-size: 0.8rem;
+      color: var(--gray-light-3-color);
+      font-style: italic;
+    }
+  
+    
+    .cc-project.nkn-row-padding{
+      padding: 0;
+    }
+    .nkn-flex.cc-project {
+      flex-direction: column-reverse;
+      /*min-height: 100vh;*/
+    }
+  
+    /*Sidebar*/
+    .cc-nav.cc-sidebar .cc-nav-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .cc-project .cc-nav.cc-vertical.cc-sidebar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      height: auto;
+      bottom: 0;
+      width: 110%;
+      margin-left: -1rem;
+      border-radius: 0;
+      z-index: 10;
+    }
+    .cc-project .cc-nav.cc-vertical.cc-sidebar .cc-nav-menu{
+      gap: .5rem;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .cc-project .cc-nav.cc-vertical.cc-sidebar .cc-nav-menu .cc-item{
+      gap: 0.5rem;
+      padding: .5rem;
+      justify-content: center;
+      line-height: 14px;
+      font-size: 10px;
+    }
+    
+    .cc-project .cc-nav.cc-vertical.cc-sidebar .cc-icon {
+      width: 2rem;
+      height: 2rem;
+      margin: 0;
+    }
+  
+    .cc-sidebar.open {
+      display: block;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+      height: auto;
+      overflow-y: auto;
+      padding: 1rem;
+      width: 70%;
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+  
+    .cc-sidebar.open .cc-filter-close {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /*The predefined sizes of the modals were changed in unkuna, 
+        so that they fit the various screens within the application, 
+        avoiding scrolling in many cases*/
+    .nkn-modal-container .nkn-modal.nkn-large {
+      height: calc(100% - 400px);
+      width: calc(100% - 400px);
+    }
+  
+    .cc-modal-large {
+      max-height: calc(100vh - 100px) !important;
+      min-height: 720px !important;
+    }
+  
+    /*Table head color*/
+    table.nkn-table thead th {
+      background-color: var(--gray-light-1-color);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cc-main-header > div.nkn-container.cc-center{
+      align-items: start;
+    }
+    /*Navigation*/
+    /*Horizontal*/
+    .cc-nav .cc-nav-menu, .cc-nav.cc-horizontal .cc-nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    .cc-nav.cc-horizontal .cc-nav-menu.cc-active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .cc-nav.cc-horizontal .cc-nav-toggle,
+    .cc-nav.cc-vertical .cc-nav-toggle {
+        display: block;
+        float: right;
+    }
+    .cc-account-info ~ .cc-nav-toggle {
+      font-size: 12px;
+    }
+    .cc-nav-item {
+        text-align: center;
+    }
+    .cc-dropdown-content {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+  
+    /*Sidebar navigation on small devices*/
+    .cc-nav.cc-vertical .cc-nav-menu.cc-active {
+      display: block;
+    }
+    
+  
+    /* Shows only the last 2 links of the breadcrumb, it does not allow line breaks */
+    .cc-breadcrumb {
+      text-wrap: nowrap;
+    }
+  
+    .cc-item-breadcrumb {
+      line-height: normal;
+      font-size: 11.5px;
+    }
+  
+    .cc-breadcrumb>li.cc-item-breadcrumb {
+      display: none;
+    }
+  
+    .cc-breadcrumb>li.cc-item-breadcrumb:nth-last-child(3) {
+      visibility: hidden;
+    }
+  
+    .cc-breadcrumb>li.cc-item-breadcrumb:nth-last-child(3)::after {
+      visibility: visible;
+      content: "...";
+    }
+  
+    .cc-breadcrumb>li.cc-item-breadcrumb:nth-last-child(-n+3) {
+      display: inline-block;
+    }
+  
+    #system {
+      padding: 0.5rem 0;
+    }
+  
+    .cc-radio-item .cc-content {
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .cc-radio-item .cc-content .cc-title,
+    .cc-radio-item .cc-content .cc-description {
+      text-align: center;
+    }
+  
+    .cc-complete-step .cc-info h1 {
+      font-size: 180%;
+    }  
+  }
+  
+  @media screen and (max-width: 450px) {
+    .cc-btn {
+      margin: 0 0 .5rem 0;
+    }
+  
+    .cc-title-separator {
+      margin: 1.5rem auto;
+    }
+  
+    .cc-title-separator::before,
+    .cc-title-separator:after {
+      width: 70px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .cc-title-separator {
+      margin: 1.5rem auto;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    .cc-btn {
+      width: 100%;
+    }
+  
+    .cc-btn-add {
+      width: 50px;
+      padding: .5rem;
+      border-radius: 50%;
+      height: 50px;
+    }
+  }
