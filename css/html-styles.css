@@ -57,7 +57,7 @@
 
 
 
-    .cc-nav .cc-nav-menu .cc-item.cc-active a, .cc-nav .cc-nav-menu .cc-item.cc-active:hover a{
+    .cc-nav .cc-nav-menu .cc-item.cc-active:hover a{
         background-color: #f4f9ff;
         color: var(--primary-color);
         font-weight: 500;

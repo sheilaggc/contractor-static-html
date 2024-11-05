@@ -614,3 +614,15 @@
       background-color: #fff5f4;
       color: #dd1601;
     }
+
+    /*Results*/
+    .cc-card .cc-card-subtitle .cc-numbers{
+      flex-wrap: wrap;
+    }
+
+    .cc-card .cc-card-subtitle .cc-number{
+      flex: 1;
+      max-width: 32%;
+      min-width: 23%;
+      margin: 10px 4px;
+    }
