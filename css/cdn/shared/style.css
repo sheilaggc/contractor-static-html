@@ -401,6 +401,16 @@
     color: var(--primary-color);
   }
   
+  .cc-btn.cc-outline.cc-accent {
+    border-color: var(--accent-color);
+    background-color: white;
+  }
+  
+  .cc-btn.cc-outline.cc-accent,
+  .cc-btn.cc-outline.cc-accent a {
+    color: var(--accent-color);
+  }
+  
   /*link button*/
   .cc-btn-link {
     border-color: transparent;
@@ -624,7 +634,7 @@
   }
   
   .cc-item-breadcrumb:first-child:before,
-  .cc-item-breadcrumb:nth-child(2):before {
+  .cc-item-breadcrumb:nth-last-child(2):before {
     display: none;
   }
   
